@@ -1,7 +1,6 @@
 package com.tjlcast.LeetCode
 
 
-
 /**
   * Created by tangjialiang on 2017/9/6.
   */
