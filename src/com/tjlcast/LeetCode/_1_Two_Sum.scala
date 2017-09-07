@@ -30,7 +30,7 @@ object _1_Two_Sum {
         def twoSum(nums: Array[Int], target: Int): Array[Int] = {
             val map = new mutable.HashMap[Integer, Integer]()
 
-            for((v, p) <- nums.zipWithIndex) {
+            for((v, p) <- nums.zipWithIndex) { // todo tjl
                 val reminder = target - v
                 if (map.contains(reminder)) {
                     ans += (map(reminder), p)

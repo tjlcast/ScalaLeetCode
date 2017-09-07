@@ -33,6 +33,7 @@ object _2_Add_Two_Numbers {
         var tail = root
 
         def addTwoNumbers(l1: ListNode, l2: ListNode): ListNode = {
+            // todo tjl
             addVal(Option(l1).collect({case n:ListNode if n!=null => n}), Option(l2).collect({case n:ListNode if n!=null => n}), 0)
             if (root.next == null) {
                 root.next = new ListNode(0)
@@ -42,6 +43,7 @@ object _2_Add_Two_Numbers {
         }
 
         def addVal(l1: Option[ListNode], l2: Option[ListNode], carr: Integer): Unit = {
+            // todo tjl
             val val1 = l1 match {
                 case Some(node) => node.x
                 case None => 0

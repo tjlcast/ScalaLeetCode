@@ -40,7 +40,7 @@ object _51_N_Queens {
 
 
         def solveNQueens(n: Int): List[List[String]] = {
-            dfs(0, ArrayBuffer(0 until len:_*))
+            dfs(0, ArrayBuffer(0 until len:_*)) // todo tjl
             return ansList.toList
         }
 
@@ -49,7 +49,7 @@ object _51_N_Queens {
                 val matrix = new ArrayBuffer[String]
 
                 for(i <- 0 until len) {
-                    val sb: mutable.StringBuilder = new mutable.StringBuilder()
+                    val sb: mutable.StringBuilder = new mutable.StringBuilder() // todo tjl
                     for(j <- 0 until len) {
                         if (j == arr(i)) {
                             sb += 'Q'
@@ -66,7 +66,7 @@ object _51_N_Queens {
                 var swap = arr(pos)
                 arr(pos) = arr(i)
                 arr(i) = swap
-                if (!canAttack(pos, arr)) dfs(pos+1, arr.slice(0, len))
+                if (!canAttack(pos, arr)) dfs(pos+1, arr.slice(0, len)) // todo tjl
             }
         }
 
