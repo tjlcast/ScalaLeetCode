@@ -9,7 +9,11 @@ import scala.collection.mutable.ArrayBuffer
 object _52_N_Queens_II {
 
     def main(args: Array[String]): Unit = {
+        val n = 4 ;
 
+        val ans = Solution.work(n)
+
+        println("work is: " + ans)
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
